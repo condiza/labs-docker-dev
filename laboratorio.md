@@ -35,3 +35,16 @@ ejercicio 2:
 *docker run -it ubuntu bash
 
 root@1e5db1201b64:/# 
+
+ejercicio 3:
+
+*docker ps -a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                            PORTS                                   NAMES
+1e5db1201b64   ubuntu    "bash"                   About a minute ago   Exited (127) About a minute ago                                           fervent_hopper
+b80976e88baf   nginx     "/docker-entrypoint.…"   2 minutes ago        Created                                                                   dazzling_mccarthy
+5ed8c39d0249   nginx     "/docker-entrypoint.…"   2 minutes ago        Up 2 minutes                      0.0.0.0:8080->80/tcp, :::8080->80/tcp   romantic_nobel
+
+*docker rm 1e5db1201b64
+
+1e5db1201b64
